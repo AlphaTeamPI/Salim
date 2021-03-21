@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="com.esprit.gui.AjoutExerciceController">
+    <stylesheets>
+        <URL value="@ajoutexercice.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="nom" layoutX="142.0" layoutY="46.0" />
+      <TextField fx:id="description" layoutX="142.0" layoutY="81.0" />
+      <Label layoutX="55.0" layoutY="50.0" text="Nom:" />
+      <Label layoutX="55.0" layoutY="85.0" text="Description:" />
+      <Button fx:id="btn" layoutX="186.0" layoutY="125.0" mnemonicParsing="false" onAction="#Ajouterexercice" text="Ajouter" />
+      <TableView fx:id="table" layoutX="5.0" layoutY="298.0" onMouseClicked="#modify" prefHeight="374.0" prefWidth="760.0">
+         <columns>
+            <TableColumn fx:id="id_exercice" prefWidth="102.40002632141113" text="Id_exercice" />
+            <TableColumn fx:id="noma" prefWidth="81.59993743896484" text="Nom" />
+            <TableColumn fx:id="descriptiona" prefWidth="72.7999267578125" text="Description" />
+         </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="177.0" prefHeight="18.0" prefWidth="56.0" text="id_supp" />
+      <Button layoutX="178.0" layoutY="220.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <TextField fx:id="id_mod" layoutX="453.0" layoutY="46.0" />
+      <Label layoutX="372.0" layoutY="49.0" prefHeight="18.0" prefWidth="56.0" text="id_mod" />
+      <TextField fx:id="nom1" layoutX="453.0" layoutY="81.0" />
+      <TextField fx:id="description1" layoutX="453.0" layoutY="116.0" />
+      <Button layoutX="497.0" layoutY="161.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+      <Button fx:id="ok" layoutX="696.0" layoutY="200.0" mnemonicParsing="false" onAction="#rechercher" text="Trier" />
+      <CheckBox fx:id="ch1" layoutX="436.0" layoutY="204.0" mnemonicParsing="false" onAction="#ch2" text="ascendant" />
+      <CheckBox fx:id="ch" layoutX="551.0" layoutY="204.0" mnemonicParsing="false" onAction="#ch1" text="descendant" />
+      <Label layoutX="370.0" layoutY="85.0" text="Nom:" />
+      <Label layoutX="368.0" layoutY="120.0" text="Description:" />
+      <ComboBox fx:id="id_sup" layoutX="143.0" layoutY="174.0" prefWidth="150.0" />
+      <TextField fx:id="rechercher" layoutX="35.0" layoutY="254.0" prefHeight="26.0" prefWidth="350.0" />
+      <Button layoutX="696.0" layoutY="14.0" mnemonicParsing="false" onAction="#menu" text="Back" />
+   </children>
+</AnchorPane>
