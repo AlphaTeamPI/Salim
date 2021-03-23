@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
@@ -156,24 +157,25 @@
                         <Image url="@../images/icons8_Search_52px.png" />
                      </image>
                   </ImageView>
-                  <TableView layoutX="25.0" layoutY="205.0" prefHeight="350.0" prefWidth="743.0">
+                  <TableView layoutX="40.0" layoutY="270.0" prefHeight="255.0" prefWidth="706.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="C1" />
                       <TableColumn prefWidth="75.0" text="C2" />
                     </columns>
                   </TableView>
                   <JFXTextField focusColor="#616161" labelFloat="true" layoutX="72.0" layoutY="100.0" prefHeight="25.0" prefWidth="164.0" promptText="ID Order" unFocusColor="#ebe8f9" />
-                  <JFXButton layoutX="323.0" layoutY="127.0" prefHeight="29.0" prefWidth="100.0" ripplerFill="#aeaeae" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="Button" textFill="WHITE">
+                  <JFXButton layoutX="451.0" layoutY="114.0" prefHeight="29.0" prefWidth="100.0" ripplerFill="#aeaeae" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="Button" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </JFXButton>
                   <JFXDatePicker defaultColor="#616161" layoutX="72.0" layoutY="150.0" promptText="Date" stylesheets="@style.css" />
-                  <JFXButton layoutX="323.0" layoutY="167.0" prefHeight="16.0" prefWidth="100.0" ripplerFill="#797979" style="-fx-background-color: transparent; -fx-background-radius: 90; -fx-border-radius: 90; -fx-border-color: #2A73FF;" text="Button">
+                  <JFXButton layoutX="451.0" layoutY="159.0" prefHeight="16.0" prefWidth="100.0" ripplerFill="#797979" style="-fx-background-color: transparent; -fx-background-radius: 90; -fx-border-radius: 90; -fx-border-color: #2A73FF;" text="Button">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
+                  <JFXComboBox focusColor="#616161" labelFloat="true" layoutX="72.0" layoutY="215.0" prefHeight="25.0" prefWidth="145.0" promptText="pick" unFocusColor="#ebe8f9" />
                </children>
             </Pane>
          </children>
